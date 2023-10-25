@@ -20,7 +20,7 @@ const projectsData = [
     image: "/Images/code.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Vlas-Pravsha/Code",
-    previewUrl: "/",
+    previewUrl: "/code-git-master-vlas-pravsha.vercel.app",
   },
   {
     id: 3,
