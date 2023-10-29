@@ -11,7 +11,7 @@ const projectsData = [
     image: "/Images/dashboard.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Vlas-Pravsha/dashboard",
-    previewUrl: "/",
+    previewUrl: "https://dashboard-rust-five.vercel.app/",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const projectsData = [
     image: "/Images/code.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Vlas-Pravsha/Code",
-    previewUrl: "/code-git-master-vlas-pravsha.vercel.app",
+    previewUrl: "https://code-git-master-vlas-pravsha.vercel.app",
   },
   {
     id: 3,
@@ -30,6 +30,15 @@ const projectsData = [
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Vlas-Pravsha/CloudCamp",
     previewUrl: "/",
+  },
+  {
+    id: 4,
+    title: "Abz Portfolio Website",
+    description: "Project 4 description",
+    image: "/Images/abz.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Vlas-Pravsha/abz",
+    previewUrl: "https://abz.vercel.app/",
   },
 ];
 
