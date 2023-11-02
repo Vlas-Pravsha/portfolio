@@ -24,15 +24,6 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "CloudCamp Portfolio Website",
-    description: "Project 3 description",
-    image: "/Images/cloudCamp.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/Vlas-Pravsha/CloudCamp",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
     title: "Abz Portfolio Website",
     description: "Project 4 description",
     image: "/Images/abz.png",
