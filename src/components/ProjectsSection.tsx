@@ -7,29 +7,40 @@ const projectsData = [
   {
     id: 1,
     title: "Dashboard(main) Portfolio Website",
-    description: "Project 1 description",
+    description:
+      "React, Next, Sccs, JavaScript, Typescript, Redux-toolkit, React-hook-form, Chart.js",
     image: "/Images/dashboard.jpg",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Vlas-Pravsha/dashboard",
     previewUrl: "https://dashboard-rust-five.vercel.app/",
   },
+
   {
     id: 2,
-    title: "Code Portfolio Application",
-    description: "Project 2 description",
-    image: "/Images/code.png",
+    title: "Vue-sneakers",
+    description: "Vue, Vite, Tailwind, JavaScript",
+    image: "/Images/vueSneakersjpg.jpg",
     tag: ["All", "Web"],
-    gitUrl: "https://github.com/Vlas-Pravsha/Code",
-    previewUrl: "https://code-git-master-vlas-pravsha.vercel.app",
+    gitUrl: "https://github.com/Vlas-Pravsha/vue-sneakers",
+    previewUrl: "https://vue-sneakers-vlas-pravsha.vercel.app/",
   },
   {
     id: 3,
     title: "Abz Portfolio Website",
-    description: "Project 4 description",
+    description: "React, Next, Sccs, JavaScript, Typescript, React-hook-form",
     image: "/Images/abz.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/Vlas-Pravsha/abz",
     previewUrl: "https://abz.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "Code Portfolio Application",
+    description: "Next, React, JavaScript, Typescript, Scss",
+    image: "/Images/code.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/Vlas-Pravsha/Code",
+    previewUrl: "https://code-git-master-vlas-pravsha.vercel.app",
   },
 ];
 
