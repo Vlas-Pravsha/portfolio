@@ -9,7 +9,7 @@ const achievementsList = [
 
   {
     metric: "Work Experience",
-    value: "1+ year",
+    value: "8 months",
     description: "Have more than a year of work experience",
   },
   {

@@ -1,28 +1,23 @@
-export{}
-// import type { NextApiRequest, NextApiResponse } from "next";
-// import { Resend } from "resend";
+import EmailTemplate from '@/components/EmailTemplate';
+import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
-// const resendClient = new Resend("re_iGCcmofu_81TuR37etPgbn2J5JyR4yd8a");
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
-// interface EmailData {
-//   from: string;
-//   to: string;
-//   subject: string;
-//   html: string;
-// }
+export async function POST(req: Request) {
+  try {
+    const { email, subject, message } = await req.json();
+    
+    const data = await resend.emails.send({
+      from: 'Your Website <onboarding@resend.dev>',
+      to: ['vlas20421@gmail.com'],
+      subject: 'New Contact Form Submission',
+      react: EmailTemplate({  email, subject, message }),
+      text: `New message from ${email}\nSubject: ${subject}\n\n${message}`,
+    });
 
-// export default async (req: NextApiRequest, res: NextApiResponse) => {
-//   try {
-//     const emailData: EmailData = {
-//       from: "onboarding@resend.dev",
-//       to: "vlas20421@gmail.com",
-//       subject: "Hello World",
-//       html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
-//     };
-
-//     const data = await resendClient.emails.send(emailData);
-//     res.status(200).json(data);
-//   } catch (error) {
-//     res.status(400).json(error);
-//   }
-// };
+    return NextResponse.json(data);
+  } catch (error) {
+    return NextResponse.json({ error });
+  }
+}

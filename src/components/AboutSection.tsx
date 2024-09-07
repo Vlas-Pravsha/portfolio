@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
@@ -9,12 +10,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Next.js</li>
-        <li>TypeScript</li>
-        <li>Redux-toolkit</li>
-        <li>React</li>
-        <li>Tailwind</li>
-        <li>JavaScript</li>
+        <li>Next.js/React</li>
+        <li>JavaScript/TypeScript</li>
+        <li>Supabase/Firebase</li>
+        <li>Rest/GraphQl</li>
+        <li>Tailwind/Scss</li>
+        <li>Materil-ui/ShadCn</li>
+        <li>Jest/React Testing Library/Storybook/Playwright</li>
+        <li>OOP/SOLID/DRY/KISS</li>
       </ul>
     ),
   },
@@ -50,12 +53,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a skilled front-end developer with expertise in React,
-            TypeScript,and Next.js. I have a strong background in
-            statemanagement using Redux Toolkit, along with proficiency in
-            styling with CSS, Tailwind, and SCSS. I excel in form handling
-            through React Hook Form and am well-versed in version control with
-            Git and project management using Jira.
+          I am a proficient front-end developer with expertise in building dynamic and scalable web applications using React and Next.js.
+          I am highly skilled in TypeScript and JavaScript, utilizing modern state management solutions like Redux Toolkit.
+          My experience spans across API integrations using REST and GraphQL, along with real-time data management through Firebase and Supabase.
+          I have a strong foundation in styling using Tailwind CSS, SCSS, and UI frameworks like Material-UI and ShadCN.
+          I follow best coding practices, including OOP principles like SOLID, DRY, and KISS, ensuring maintainable and efficient code.
+          Additionally, I excel in testing with Jest, React Testing Library, Storybook, and Playwright.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
