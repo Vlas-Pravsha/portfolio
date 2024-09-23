@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaUserSecret } from "react-icons/fa";
+
 const HeroSection = () => {
   return (
     <section className="lg:py-2">
@@ -29,14 +29,13 @@ const HeroSection = () => {
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            {/* <Image
-              src="/Images/hero-image.png"
+            <Image
+              src="/Images/me.jpeg"
               alt="Hero"
               className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}
               height={300}
-            /> */}
-            <FaUserSecret className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-36 h-36 lg:w-60 lg:h-60" />
+            />
           </div>
         </div>
       </div>
